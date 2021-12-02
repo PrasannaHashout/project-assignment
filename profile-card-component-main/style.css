@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+    font-family:"Kumbh",sans-serif;
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: -10% 580% , 107% -594%;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1440px;
+    justify-content: center;
+}
+
+.box{
+    width: 450px;
+    height: 500px;
+    border-radius: 15px;
+    transform: translateY(40%);
+    background-color: white;
+}
+
+.topSection {
+    background-image: url(./images/bg-pattern-card.svg);
+    height: 200px;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+#icon{
+    align-self: flex-end;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    padding: 8px;
+    background: white;
+    transform: translateY(50%);
+}
+
+.bottomSection{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileDetail{
+    margin-top: 70px;
+}
+
+.profileDetail h2{
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.profileDetail span{
+    padding-left: 20px;
+    font-weight: normal;
+    color: hsl(227, 10%, 46%);
+    font-family: "Kumbh", sans-serif;
+}
+
+.profileDetail p{
+    text-align: center;
+    font-size: 18px;
+    color: hsl(227, 10%, 46%);
+}
+
+.statsSection{
+    margin-top:20px;
+    width: 100%;
+    border-top: 1px solid hsl(0, 0%, 59%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.counts{
+    margin: 0 30px;
+    text-align: center;
+}
+
+.counts h2{
+    margin-bottom: 10px;
+}
+.counts p{
+    margin: 0;
+    color:hsl(227, 10%, 46%) ;
+    letter-spacing: 2px;
+
+}
+
+@media (max-width:375px) {
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+    font-family:"Kumbh",sans-serif;
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: 125% 197% , -21% -115%;
+}
+
+.box{
+    width: 350px;
+    height: 500px;
+    border-radius: 15px;
+    transform: translateY(20%);
+    background-color: white;
+}
+
+.counts{
+    margin: 0 20px;
+    text-align: center;
+}
+}
